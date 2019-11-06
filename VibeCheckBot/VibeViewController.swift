@@ -8,27 +8,8 @@
 
 import UIKit
 
-enum TweetError: Error {
-    case duplicate // 403
-    case other(Error)
-}
 
-typealias TweetCompletion = (Result<Bool, TweetError>)->Void
 
-protocol TwitterServiceProtocol {
-    func signIn()
-    func postTweet(_ tweet: String, _ completion: TweetCompletion)
-}
-
-class TwitterService: TwitterServiceProtocol {
-    
-}
-
-// pretends to be twitter, lets us text our UI, application
-// without actually using the Twitter website
-// 1. mock returns
-// 2. connect to our internal testing website
-class ProxyTwitterService:
 
 class VibeViewController: UIViewController {
     
