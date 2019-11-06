@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F1E3DFD237306B600649FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E3DFC237306B600649FF4 /* AppDelegate.swift */; };
+		3F1E3DFF237306B600649FF4 /* VibeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E3DFE237306B600649FF4 /* VibeViewController.swift */; };
+		3F1E3E02237306B600649FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1E3E00237306B600649FF4 /* Main.storyboard */; };
+		3F1E3E04237306B700649FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F1E3E03237306B700649FF4 /* Assets.xcassets */; };
+		3F1E3E07237306B700649FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F1E3E05237306B700649FF4 /* LaunchScreen.storyboard */; };
+		3F1E3E12237306B800649FF4 /* VibeCheckBotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E3E11237306B800649FF4 /* VibeCheckBotTests.swift */; };
+		5B98B7DEB353C4584E2CE18F /* Pods_VibeCheckBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7045B275D03A571DA8296BF /* Pods_VibeCheckBotTests.framework */; };
+		C58366F512F7FF36B5D3CB27 /* Pods_VibeCheckBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C81DFA31C3FA4BD12E10D6 /* Pods_VibeCheckBot.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F1E3E0E237306B800649FF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F1E3DF1237306B600649FF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F1E3DF8237306B600649FF4;
+			remoteInfo = VibeCheckBot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23EDE44BF8E96E27F62A1767 /* Pods-VibeCheckBotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeCheckBotTests.release.xcconfig"; path = "Target Support Files/Pods-VibeCheckBotTests/Pods-VibeCheckBotTests.release.xcconfig"; sourceTree = "<group>"; };
+		3F1E3DF9237306B600649FF4 /* VibeCheckBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VibeCheckBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1E3DFC237306B600649FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F1E3DFE237306B600649FF4 /* VibeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeViewController.swift; sourceTree = "<group>"; };
+		3F1E3E01237306B600649FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F1E3E03237306B700649FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F1E3E06237306B700649FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F1E3E08237306B700649FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1E3E0D237306B800649FF4 /* VibeCheckBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VibeCheckBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F1E3E11237306B800649FF4 /* VibeCheckBotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibeCheckBotTests.swift; sourceTree = "<group>"; };
+		3F1E3E13237306B800649FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C81DFA31C3FA4BD12E10D6 /* Pods_VibeCheckBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VibeCheckBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		490F93D01AD005B0F64A67AD /* Pods-VibeCheckBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeCheckBot.debug.xcconfig"; path = "Target Support Files/Pods-VibeCheckBot/Pods-VibeCheckBot.debug.xcconfig"; sourceTree = "<group>"; };
+		9075FF4960C7730E1ED03B4E /* Pods-VibeCheckBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeCheckBot.release.xcconfig"; path = "Target Support Files/Pods-VibeCheckBot/Pods-VibeCheckBot.release.xcconfig"; sourceTree = "<group>"; };
+		B58BB50DEA7AD0D8589FCC96 /* Pods-VibeCheckBotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeCheckBotTests.debug.xcconfig"; path = "Target Support Files/Pods-VibeCheckBotTests/Pods-VibeCheckBotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7045B275D03A571DA8296BF /* Pods_VibeCheckBotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VibeCheckBotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F1E3DF6237306B600649FF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C58366F512F7FF36B5D3CB27 /* Pods_VibeCheckBot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1E3E0A237306B800649FF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B98B7DEB353C4584E2CE18F /* Pods_VibeCheckBotTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F1E3DF0237306B600649FF4 = {
+			isa = PBXGroup;
+			children = (
+				3F1E3DFB237306B600649FF4 /* VibeCheckBot */,
+				3F1E3E10237306B800649FF4 /* VibeCheckBotTests */,
+				3F1E3DFA237306B600649FF4 /* Products */,
+				F65576551241975E5CB256B9 /* Pods */,
+				47C85EDD5515A99E095F4F4A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F1E3DFA237306B600649FF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F1E3DF9237306B600649FF4 /* VibeCheckBot.app */,
+				3F1E3E0D237306B800649FF4 /* VibeCheckBotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F1E3DFB237306B600649FF4 /* VibeCheckBot */ = {
+			isa = PBXGroup;
+			children = (
+				3F1E3DFC237306B600649FF4 /* AppDelegate.swift */,
+				3F1E3DFE237306B600649FF4 /* VibeViewController.swift */,
+				3F1E3E00237306B600649FF4 /* Main.storyboard */,
+				3F1E3E03237306B700649FF4 /* Assets.xcassets */,
+				3F1E3E05237306B700649FF4 /* LaunchScreen.storyboard */,
+				3F1E3E08237306B700649FF4 /* Info.plist */,
+			);
+			path = VibeCheckBot;
+			sourceTree = "<group>";
+		};
+		3F1E3E10237306B800649FF4 /* VibeCheckBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F1E3E11237306B800649FF4 /* VibeCheckBotTests.swift */,
+				3F1E3E13237306B800649FF4 /* Info.plist */,
+			);
+			path = VibeCheckBotTests;
+			sourceTree = "<group>";
+		};
+		47C85EDD5515A99E095F4F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44C81DFA31C3FA4BD12E10D6 /* Pods_VibeCheckBot.framework */,
+				C7045B275D03A571DA8296BF /* Pods_VibeCheckBotTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F65576551241975E5CB256B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				490F93D01AD005B0F64A67AD /* Pods-VibeCheckBot.debug.xcconfig */,
+				9075FF4960C7730E1ED03B4E /* Pods-VibeCheckBot.release.xcconfig */,
+				B58BB50DEA7AD0D8589FCC96 /* Pods-VibeCheckBotTests.debug.xcconfig */,
+				23EDE44BF8E96E27F62A1767 /* Pods-VibeCheckBotTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F1E3DF8237306B600649FF4 /* VibeCheckBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1E3E16237306B800649FF4 /* Build configuration list for PBXNativeTarget "VibeCheckBot" */;
+			buildPhases = (
+				FA69779A57828571ECA0B019 /* [CP] Check Pods Manifest.lock */,
+				3F1E3DF5237306B600649FF4 /* Sources */,
+				3F1E3DF6237306B600649FF4 /* Frameworks */,
+				3F1E3DF7237306B600649FF4 /* Resources */,
+				C3DC7634D8C3034ED0849FEE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VibeCheckBot;
+			productName = VibeCheckBot;
+			productReference = 3F1E3DF9237306B600649FF4 /* VibeCheckBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F1E3E0C237306B800649FF4 /* VibeCheckBotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F1E3E19237306B800649FF4 /* Build configuration list for PBXNativeTarget "VibeCheckBotTests" */;
+			buildPhases = (
+				95F6002558367428D2BC747E /* [CP] Check Pods Manifest.lock */,
+				3F1E3E09237306B800649FF4 /* Sources */,
+				3F1E3E0A237306B800649FF4 /* Frameworks */,
+				3F1E3E0B237306B800649FF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F1E3E0F237306B800649FF4 /* PBXTargetDependency */,
+			);
+			name = VibeCheckBotTests;
+			productName = VibeCheckBotTests;
+			productReference = 3F1E3E0D237306B800649FF4 /* VibeCheckBotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F1E3DF1237306B600649FF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "K Y";
+				TargetAttributes = {
+					3F1E3DF8237306B600649FF4 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					3F1E3E0C237306B800649FF4 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 3F1E3DF8237306B600649FF4;
+					};
+				};
+			};
+			buildConfigurationList = 3F1E3DF4237306B600649FF4 /* Build configuration list for PBXProject "VibeCheckBot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F1E3DF0237306B600649FF4;
+			productRefGroup = 3F1E3DFA237306B600649FF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F1E3DF8237306B600649FF4 /* VibeCheckBot */,
+				3F1E3E0C237306B800649FF4 /* VibeCheckBotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F1E3DF7237306B600649FF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1E3E07237306B700649FF4 /* LaunchScreen.storyboard in Resources */,
+				3F1E3E04237306B700649FF4 /* Assets.xcassets in Resources */,
+				3F1E3E02237306B600649FF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1E3E0B237306B800649FF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95F6002558367428D2BC747E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VibeCheckBotTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3DC7634D8C3034ED0849FEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VibeCheckBot/Pods-VibeCheckBot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VibeCheckBot/Pods-VibeCheckBot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VibeCheckBot/Pods-VibeCheckBot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA69779A57828571ECA0B019 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VibeCheckBot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F1E3DF5237306B600649FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1E3DFF237306B600649FF4 /* VibeViewController.swift in Sources */,
+				3F1E3DFD237306B600649FF4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F1E3E09237306B800649FF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F1E3E12237306B800649FF4 /* VibeCheckBotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F1E3E0F237306B800649FF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F1E3DF8237306B600649FF4 /* VibeCheckBot */;
+			targetProxy = 3F1E3E0E237306B800649FF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F1E3E00237306B600649FF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1E3E01237306B600649FF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F1E3E05237306B700649FF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F1E3E06237306B700649FF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F1E3E14237306B800649FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F1E3E15237306B800649FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F1E3E17237306B800649FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 490F93D01AD005B0F64A67AD /* Pods-VibeCheckBot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VibeCheckBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ky.VibeCheckBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F1E3E18237306B800649FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9075FF4960C7730E1ED03B4E /* Pods-VibeCheckBot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VibeCheckBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ky.VibeCheckBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F1E3E1A237306B800649FF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B58BB50DEA7AD0D8589FCC96 /* Pods-VibeCheckBotTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VibeCheckBotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ky.VibeCheckBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VibeCheckBot.app/VibeCheckBot";
+			};
+			name = Debug;
+		};
+		3F1E3E1B237306B800649FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23EDE44BF8E96E27F62A1767 /* Pods-VibeCheckBotTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VibeCheckBotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ky.VibeCheckBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VibeCheckBot.app/VibeCheckBot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F1E3DF4237306B600649FF4 /* Build configuration list for PBXProject "VibeCheckBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1E3E14237306B800649FF4 /* Debug */,
+				3F1E3E15237306B800649FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1E3E16237306B800649FF4 /* Build configuration list for PBXNativeTarget "VibeCheckBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1E3E17237306B800649FF4 /* Debug */,
+				3F1E3E18237306B800649FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F1E3E19237306B800649FF4 /* Build configuration list for PBXNativeTarget "VibeCheckBotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F1E3E1A237306B800649FF4 /* Debug */,
+				3F1E3E1B237306B800649FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F1E3DF1237306B600649FF4 /* Project object */;
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vibe View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VibeViewController" customModule="VibeCheckBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oSv-gn-ZRp">
+                                <rect key="frame" x="20" y="438" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Vibe Message here:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QNd-8i-S2z">
+                                <rect key="frame" x="20" y="395" width="374" height="23"/>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxH-vm-Mqs">
+                                <rect key="frame" x="20" y="782" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.65595090389251709" blue="0.99662786722183228" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6AQ-sy-LtS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="35"/>
+                                <state key="normal" title="Check Vibes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkVibesAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEf-Sz-tUO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QNd-8i-S2z" firstAttribute="trailing" secondItem="oSv-gn-ZRp" secondAttribute="trailing" id="0i8-r9-lpY"/>
+                            <constraint firstItem="oSv-gn-ZRp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="8Oy-KV-uoy"/>
+                            <constraint firstItem="oSv-gn-ZRp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Axn-qG-nBk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WxH-vm-Mqs" secondAttribute="bottom" constant="20" id="ESU-ES-k6S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WxH-vm-Mqs" secondAttribute="trailing" constant="20" id="RYA-IX-Sid"/>
+                            <constraint firstItem="WxH-vm-Mqs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZEB-Hv-6Uz"/>
+                            <constraint firstItem="oSv-gn-ZRp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jpD-DA-U7f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oSv-gn-ZRp" secondAttribute="trailing" constant="20" id="tQW-ZK-nqF"/>
+                            <constraint firstItem="oSv-gn-ZRp" firstAttribute="top" secondItem="QNd-8i-S2z" secondAttribute="bottom" constant="20" id="utH-35-hfL"/>
+                            <constraint firstItem="QNd-8i-S2z" firstAttribute="leading" secondItem="oSv-gn-ZRp" secondAttribute="leading" id="ze7-lh-aWQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="checkVibesButton" destination="WxH-vm-Mqs" id="cgO-Cb-8HZ"/>
+                        <outlet property="vibeMessageLabel" destination="QNd-8i-S2z" id="ooH-rL-3E4"/>
+                        <outlet property="vibeTextField" destination="oSv-gn-ZRp" id="eLl-nr-422"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="106.47321428571428"/>
+        </scene>
+    </scenes>
+</document>
