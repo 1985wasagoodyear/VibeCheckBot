@@ -11,5 +11,6 @@ import Foundation
 enum TweetError: Error {
     /// represented as 403 from HTTP response
     case duplicate
+    case badTweet(String)
     case other(Error)
 }

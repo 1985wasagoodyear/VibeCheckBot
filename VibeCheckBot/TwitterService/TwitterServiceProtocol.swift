@@ -6,11 +6,11 @@
 //  Copyright © 2019 K Y. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 typealias TweetCompletion = (Result<Bool, TweetError>)->Void
 
 protocol TwitterServiceProtocol {
-    func signIn()
+    func signIn(_ vc: UIViewController)
     func postTweet(_ tweet: String, _ completion: @escaping TweetCompletion)
 }

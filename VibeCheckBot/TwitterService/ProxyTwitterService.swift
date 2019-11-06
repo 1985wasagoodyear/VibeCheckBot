@@ -6,15 +6,14 @@
 //  Copyright © 2019 K Y. All rights reserved.
 //
 
-import Foundation
-
+import UIKit
 
 // pretends to be twitter, lets us text our UI, application
 // without actually using the Twitter website
 // 1. mock returns
 // 2. connect to our internal testing website
 class ProxyTwitterService: TwitterServiceProtocol {
-    func signIn() {
+    func signIn(_ vc: UIViewController) {
         fatalError("Not implemented")
     }
     

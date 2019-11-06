@@ -17,6 +17,7 @@
 		3F1E3E3323731D2C00649FF4 /* TwitterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E3E3223731D2C00649FF4 /* TwitterService.swift */; };
 		3F1E3E3523731D4700649FF4 /* ProxyTwitterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E3E3423731D4700649FF4 /* ProxyTwitterService.swift */; };
 		3F1E3E3723731D5800649FF4 /* TweetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E3E3623731D5800649FF4 /* TweetError.swift */; };
+		3F907F562373267200A7BFC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F907F552373267200A7BFC8 /* Constants.swift */; };
 		5B98B7DEB353C4584E2CE18F /* Pods_VibeCheckBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7045B275D03A571DA8296BF /* Pods_VibeCheckBotTests.framework */; };
 		C58366F512F7FF36B5D3CB27 /* Pods_VibeCheckBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44C81DFA31C3FA4BD12E10D6 /* Pods_VibeCheckBot.framework */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		3F1E3E3223731D2C00649FF4 /* TwitterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterService.swift; sourceTree = "<group>"; };
 		3F1E3E3423731D4700649FF4 /* ProxyTwitterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyTwitterService.swift; sourceTree = "<group>"; };
 		3F1E3E3623731D5800649FF4 /* TweetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetError.swift; sourceTree = "<group>"; };
+		3F907F552373267200A7BFC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		44C81DFA31C3FA4BD12E10D6 /* Pods_VibeCheckBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VibeCheckBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		490F93D01AD005B0F64A67AD /* Pods-VibeCheckBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeCheckBot.debug.xcconfig"; path = "Target Support Files/Pods-VibeCheckBot/Pods-VibeCheckBot.debug.xcconfig"; sourceTree = "<group>"; };
 		9075FF4960C7730E1ED03B4E /* Pods-VibeCheckBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeCheckBot.release.xcconfig"; path = "Target Support Files/Pods-VibeCheckBot/Pods-VibeCheckBot.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,10 +99,10 @@
 		3F1E3DFB237306B600649FF4 /* VibeCheckBot */ = {
 			isa = PBXGroup;
 			children = (
-				3F1E3DFC237306B600649FF4 /* AppDelegate.swift */,
 				3F1E3DFE237306B600649FF4 /* VibeViewController.swift */,
 				3F1E3E2F23731D0900649FF4 /* TwitterService */,
 				3F1E3E00237306B600649FF4 /* Main.storyboard */,
+				3F1E3DFC237306B600649FF4 /* AppDelegate.swift */,
 				3F1E3E03237306B700649FF4 /* Assets.xcassets */,
 				3F1E3E05237306B700649FF4 /* LaunchScreen.storyboard */,
 				3F1E3E08237306B700649FF4 /* Info.plist */,
@@ -120,6 +122,7 @@
 		3F1E3E2F23731D0900649FF4 /* TwitterService */ = {
 			isa = PBXGroup;
 			children = (
+				3F907F552373267200A7BFC8 /* Constants.swift */,
 				3F1E3E3623731D5800649FF4 /* TweetError.swift */,
 				3F1E3E3023731D1A00649FF4 /* TwitterServiceProtocol.swift */,
 				3F1E3E3223731D2C00649FF4 /* TwitterService.swift */,
@@ -320,6 +323,7 @@
 				3F1E3E3523731D4700649FF4 /* ProxyTwitterService.swift in Sources */,
 				3F1E3E3123731D1A00649FF4 /* TwitterServiceProtocol.swift in Sources */,
 				3F1E3DFD237306B600649FF4 /* AppDelegate.swift in Sources */,
+				3F907F562373267200A7BFC8 /* Constants.swift in Sources */,
 				3F1E3E3723731D5800649FF4 /* TweetError.swift in Sources */,
 				3F1E3E3323731D2C00649FF4 /* TwitterService.swift in Sources */,
 			);
