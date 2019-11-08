@@ -9,11 +9,18 @@
 import UIKit
 import OAuthSwift
 
+private let IS_DEBUGGING = true
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let twitterService = TwitterService()
+    lazy var twitterService: TwitterServiceProtocol = {
+        if IS_DEBUGGING {
+            return ProxyTwitterService()
+        }
+        return TwitterService()
+    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         

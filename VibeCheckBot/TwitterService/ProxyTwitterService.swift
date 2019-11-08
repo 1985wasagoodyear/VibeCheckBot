@@ -8,17 +8,29 @@
 
 import UIKit
 
-// pretends to be twitter, lets us text our UI, application
+// pretends to be Twitter, lets us text our UI, application
 // without actually using the Twitter website
 // 1. mock returns
 // 2. connect to our internal testing website
+
+private let PROXY_KEY = "proxyKey"
+
 class ProxyTwitterService: TwitterServiceProtocol {
-    func signIn(_ vc: UIViewController, _ completion: @escaping (Bool) -> Void) {
-        fatalError("Not implemented")
+    
+    private let userDef = UserDefaults.standard
+    
+    func signIn(_ vc: UIViewController,
+                _ completion: @escaping (Bool) -> Void) {
+        userDef.set(true, forKey: PROXY_KEY)
+        completion(true)
     }
     
     func postTweet(_ tweet: String,
                    _ completion: @escaping (Result<Bool, TweetError>) -> Void) {
-        fatalError("Not implemented")
+        completion(.success(true))
+    }
+    
+    func readFromKeychain() -> Bool {
+        return userDef.bool(forKey: PROXY_KEY)
     }
 }

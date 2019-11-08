@@ -20,7 +20,6 @@ class VibeViewController: UIViewController {
         super.viewDidAppear(animated)
     }
 
-
     @IBAction func checkVibesAction(_ sender: Any) {
         guard let text = vibeTextField.text else { return }
         service.postTweet(text) { [weak self] (result) in

@@ -13,4 +13,5 @@ typealias TweetCompletion = (Result<Bool, TweetError>)->Void
 protocol TwitterServiceProtocol {
     func signIn(_ vc: UIViewController, _ completion: @escaping (Bool)->Void)
     func postTweet(_ tweet: String, _ completion: @escaping TweetCompletion)
+    func readFromKeychain() -> Bool
 }

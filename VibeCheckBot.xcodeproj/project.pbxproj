@@ -51,6 +51,9 @@
 		3F1E3E3623731D5800649FF4 /* TweetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetError.swift; sourceTree = "<group>"; };
 		3F87FB872375A982009E6766 /* SignInVibeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVibeViewController.swift; sourceTree = "<group>"; };
 		3F87FB892375BAC9009E6766 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F87FB8A2375BC4F009E6766 /* Testing.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Testing.md; sourceTree = "<group>"; };
+		3F87FB8B2375C044009E6766 /* DependencyInjection.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DependencyInjection.md; sourceTree = "<group>"; };
+		3F87FB8C2375C492009E6766 /* SOLID.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SOLID.md; sourceTree = "<group>"; };
 		3F907F552373267200A7BFC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		44C81DFA31C3FA4BD12E10D6 /* Pods_VibeCheckBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VibeCheckBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		490F93D01AD005B0F64A67AD /* Pods-VibeCheckBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VibeCheckBot.debug.xcconfig"; path = "Target Support Files/Pods-VibeCheckBot/Pods-VibeCheckBot.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				3F87FB892375BAC9009E6766 /* README.md */,
+				3F87FB8A2375BC4F009E6766 /* Testing.md */,
+				3F87FB8B2375C044009E6766 /* DependencyInjection.md */,
+				3F87FB8C2375C492009E6766 /* SOLID.md */,
 				3F1E3DFB237306B600649FF4 /* VibeCheckBot */,
 				3F1E3E10237306B800649FF4 /* VibeCheckBotTests */,
 				3F1E3DFA237306B600649FF4 /* Products */,
