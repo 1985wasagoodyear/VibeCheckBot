@@ -8,20 +8,16 @@
 
 import UIKit
 
-
-
-
 class VibeViewController: UIViewController {
     
     @IBOutlet var vibeMessageLabel: UILabel!
     @IBOutlet var vibeTextField: UITextField!
     @IBOutlet var checkVibesButton: UIButton!
     
-    let service: TwitterServiceProtocol = TwitterService()
+    var service: TwitterServiceProtocol!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        service.signIn(self)
     }
 
 

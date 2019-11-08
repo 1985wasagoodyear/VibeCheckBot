@@ -8,6 +8,14 @@
 
 import UIKit
 import OAuthSwift
+import KeychainAccess
+
+private let serviceID = "ky.VibeCheckBot"
+private let USER_HAS_SIGNED_IN_PREVIOUSLY = "userHasSignedInPreviously"
+
+private extension URL {
+    static let authorizeURL = URL(string: "\(Constants.scheme)://\(Constants.oauthcallback)/twitter")!
+}
 
 class TwitterService: TwitterServiceProtocol {
     
@@ -24,28 +32,69 @@ class TwitterService: TwitterServiceProtocol {
     
     var handle: OAuthSwiftRequestHandle?
     
-    private var token: String?
-    private var tokenSecret: String?
-    
-    func signIn(_ vc: UIViewController) {
+    func signIn(_ vc: UIViewController,
+                _ completion: @escaping (Bool)->Void) {
+        
+        if readFromKeychain() == true {
+            print("user has already signed in")
+            completion(false)
+            return
+        }
+        print("User is signing in")
         // authorize
-        let url = URL(string: "\(Constants.scheme)://\(Constants.oauthcallback)/twitter")!
+        let url: URL = .authorizeURL
         handle = oauthswift.authorize(
-        withCallbackURL: url) { [weak self] result in
+            withCallbackURL: url) { [weak self] result in
             switch result {
             case .success(let (credential, response, parameters)):
-                print(credential.oauthToken)
-                print(credential.oauthTokenSecret)
-                print(parameters["user_id"])
                 guard let self = self else { return }
-                self.token = credential.oauthToken
-                self.tokenSecret = credential.oauthTokenSecret
-            // Do your request
+                let tokens = (oauthToken: credential.oauthToken,
+                              oauthTokenSecret: credential.oauthTokenSecret)
+                self.saveToKeychain(tokens)
+                completion(true)
             case .failure(let error):
                 print(error.localizedDescription)
+                completion(false)
             }
         }
         // oauthswift.authorizeURLHandler = SafariURLHandler(viewController: vc, oauthSwift: oauthswift)
+    }
+    
+    private func saveToKeychain(_ tokens: (oauthToken: String, oauthTokenSecret: String)) {
+        let keychain = Keychain(service: serviceID)
+        keychain["oauthToken"] = tokens.oauthToken
+        keychain["oauthTokenSecret"] = tokens.oauthTokenSecret
+        
+        let userDef = UserDefaults.standard
+        userDef.set(true, forKey: USER_HAS_SIGNED_IN_PREVIOUSLY)
+    }
+    
+    /// Represents existing token from previous signin
+    func readFromKeychain() -> Bool {
+        let userDef = UserDefaults.standard
+        let hasSignedIn = userDef.bool(forKey: USER_HAS_SIGNED_IN_PREVIOUSLY)
+        // user has never signed in before on this device
+        // (or has logged out)
+        if hasSignedIn == false {
+            signout() // wipe data
+            return false
+        }
+        let keychain = Keychain(service: serviceID)
+        guard let oauthToken = keychain["oauthToken"],
+            let oauthTokenSecret = keychain["oauthTokenSecret"] else {
+                return false
+        }
+        oauthswift.client.credential.oauthToken = oauthToken
+        oauthswift.client.credential.oauthTokenSecret = oauthTokenSecret
+        return true
+    }
+    
+    func signout() {
+        let keychain = Keychain(service: serviceID)
+        keychain["oauthToken"] = nil
+        keychain["oauthTokenSecret"] = nil
+        oauthswift.client.credential.oauthToken = ""
+        oauthswift.client.credential.oauthTokenSecret = ""
     }
     
     func postTweet(_ tweet: String,

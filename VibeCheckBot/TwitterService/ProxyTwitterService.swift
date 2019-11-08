@@ -13,7 +13,7 @@ import UIKit
 // 1. mock returns
 // 2. connect to our internal testing website
 class ProxyTwitterService: TwitterServiceProtocol {
-    func signIn(_ vc: UIViewController) {
+    func signIn(_ vc: UIViewController, _ completion: @escaping (Bool) -> Void) {
         fatalError("Not implemented")
     }
     

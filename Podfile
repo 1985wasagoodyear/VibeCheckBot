@@ -5,6 +5,7 @@ target 'VibeCheckBot' do
 
   # Pods for VibeCheckBot
   pod 'OAuthSwift', '~> 2.0.0'
+  pod 'KeychainAccess'
 
   target 'VibeCheckBotTests' do
     inherit! :search_paths
