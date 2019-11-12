@@ -8,8 +8,9 @@
 
 import UIKit
 import OAuthSwift
+import Firebase
 
-private let IS_DEBUGGING = true
+private let IS_DEBUGGING = false
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,6 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = initialViewController()
         window?.makeKeyAndVisible()
+        
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
         
         return true
     }

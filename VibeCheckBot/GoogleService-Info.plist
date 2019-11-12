@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1089851205769-4m9ugjhec5hskq7hr9oka4qbsjj5tmq5.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1089851205769-4m9ugjhec5hskq7hr9oka4qbsjj5tmq5</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBlfXiiercXVHhku2Ng_OKLDxZiFxFjJH8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1089851205769</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ky.VibeCheckBot</string>
+	<key>PROJECT_ID</key>
+	<string>vibecheckbot</string>
+	<key>STORAGE_BUCKET</key>
+	<string>vibecheckbot.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1089851205769:ios:592557de3f0ca33b0d7e58</string>
+	<key>DATABASE_URL</key>
+	<string>https://vibecheckbot.firebaseio.com</string>
+</dict>
+</plist>

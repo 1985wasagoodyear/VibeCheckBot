@@ -17,6 +17,7 @@
 		3F1E3E3323731D2C00649FF4 /* TwitterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E3E3223731D2C00649FF4 /* TwitterService.swift */; };
 		3F1E3E3523731D4700649FF4 /* ProxyTwitterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E3E3423731D4700649FF4 /* ProxyTwitterService.swift */; };
 		3F1E3E3723731D5800649FF4 /* TweetError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1E3E3623731D5800649FF4 /* TweetError.swift */; };
+		3F47D3B5237AED6A00C90688 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F47D3B4237AED6A00C90688 /* GoogleService-Info.plist */; };
 		3F87FB882375A982009E6766 /* SignInVibeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87FB872375A982009E6766 /* SignInVibeViewController.swift */; };
 		3F907F562373267200A7BFC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F907F552373267200A7BFC8 /* Constants.swift */; };
 		5B98B7DEB353C4584E2CE18F /* Pods_VibeCheckBotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7045B275D03A571DA8296BF /* Pods_VibeCheckBotTests.framework */; };
@@ -49,6 +50,7 @@
 		3F1E3E3223731D2C00649FF4 /* TwitterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterService.swift; sourceTree = "<group>"; };
 		3F1E3E3423731D4700649FF4 /* ProxyTwitterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyTwitterService.swift; sourceTree = "<group>"; };
 		3F1E3E3623731D5800649FF4 /* TweetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetError.swift; sourceTree = "<group>"; };
+		3F47D3B4237AED6A00C90688 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3F87FB872375A982009E6766 /* SignInVibeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVibeViewController.swift; sourceTree = "<group>"; };
 		3F87FB892375BAC9009E6766 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F87FB8A2375BC4F009E6766 /* Testing.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Testing.md; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				3F1E3E03237306B700649FF4 /* Assets.xcassets */,
 				3F1E3E05237306B700649FF4 /* LaunchScreen.storyboard */,
 				3F1E3E08237306B700649FF4 /* Info.plist */,
+				3F47D3B4237AED6A00C90688 /* GoogleService-Info.plist */,
 			);
 			path = VibeCheckBot;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				3F1E3DF6237306B600649FF4 /* Frameworks */,
 				3F1E3DF7237306B600649FF4 /* Resources */,
 				C3DC7634D8C3034ED0849FEE /* [CP] Embed Pods Frameworks */,
+				3F47D3B6237AF04C00C90688 /* Firebase Setup */,
 			);
 			buildRules = (
 			);
@@ -249,6 +253,7 @@
 				3F1E3E07237306B700649FF4 /* LaunchScreen.storyboard in Resources */,
 				3F1E3E04237306B700649FF4 /* Assets.xcassets in Resources */,
 				3F1E3E02237306B600649FF4 /* Main.storyboard in Resources */,
+				3F47D3B5237AED6A00C90688 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +267,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3F47D3B6237AF04C00C90688 /* Firebase Setup */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Firebase Setup";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n\n";
+		};
 		95F6002558367428D2BC747E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -501,12 +524,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = VibeCheckBot/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ky.VibeCheckBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -526,6 +551,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = ky.VibeCheckBot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

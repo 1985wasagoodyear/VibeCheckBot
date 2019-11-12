@@ -18,6 +18,9 @@ class VibeViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        sleep(1)
+        let arr = [Any]()
+        let a: Any = arr[0]
     }
 
     @IBAction func checkVibesAction(_ sender: Any) {
@@ -27,7 +30,8 @@ class VibeViewController: UIViewController {
             case .success:
                 print("Tweet posted")
             case .failure(let err):
-                self?.handleFailure(err)
+                fatalError("Did receive error: \(err)")
+                // self?.handleFailure(err)
             }
         }
     }

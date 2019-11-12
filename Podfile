@@ -6,6 +6,11 @@ target 'VibeCheckBot' do
   # Pods for VibeCheckBot
   pod 'OAuthSwift', '~> 2.0.0'
   pod 'KeychainAccess'
+  
+  # Add the Firebase pod for Google Analytics
+  pod 'Firebase/Analytics'
+  pod 'Fabric'
+  pod 'Crashlytics'
 
   target 'VibeCheckBotTests' do
     inherit! :search_paths

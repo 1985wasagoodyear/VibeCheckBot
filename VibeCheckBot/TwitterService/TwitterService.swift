@@ -107,12 +107,16 @@ class TwitterService: TwitterServiceProtocol {
         let updateEndpoint = URL(string:  "https://api.twitter.com/1.1/statuses/update.json?status=\(encoded)")!
         print(updateEndpoint)
         oauthswift.client.post(updateEndpoint) { (response) in
+            let f = NSError(domain: "Testing", code: 1, userInfo: nil)
+            completion(.failure(.other(f)))
+            /*
             switch response {
             case .success(let s):
                 completion(.success(true))
             case .failure(let f):
                 completion(.failure(.other(f)))
             }
+ */
         }
         
         
