@@ -51,6 +51,7 @@
 		3F1E3E3423731D4700649FF4 /* ProxyTwitterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyTwitterService.swift; sourceTree = "<group>"; };
 		3F1E3E3623731D5800649FF4 /* TweetError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetError.swift; sourceTree = "<group>"; };
 		3F47D3B4237AED6A00C90688 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F47D3B7237B1F1700C90688 /* Crashes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Crashes.md; sourceTree = "<group>"; };
 		3F87FB872375A982009E6766 /* SignInVibeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVibeViewController.swift; sourceTree = "<group>"; };
 		3F87FB892375BAC9009E6766 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F87FB8A2375BC4F009E6766 /* Testing.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Testing.md; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 				3F87FB8A2375BC4F009E6766 /* Testing.md */,
 				3F87FB8B2375C044009E6766 /* DependencyInjection.md */,
 				3F87FB8C2375C492009E6766 /* SOLID.md */,
+				3F47D3B7237B1F1700C90688 /* Crashes.md */,
 				3F1E3DFB237306B600649FF4 /* VibeCheckBot */,
 				3F1E3E10237306B800649FF4 /* VibeCheckBotTests */,
 				3F1E3DFA237306B600649FF4 /* Products */,
